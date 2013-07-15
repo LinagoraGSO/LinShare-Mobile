@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+	  
+		<meta name="viewport" content="width=320; user-scalable=no" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+		<title>LinShare Mobile</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<link rel="stylesheet" href="master.css" />
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>	
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		<script src="jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+		<script src="langpack/fr.js" charset="utf-8" type="text/javascript"></script>
+		<script src="script.js"></script>
+		<script>
+			initPage();
+			setStorage();
+			languageInit();
+		</script>
+		
+	</head>
+  
+	<body>
+  
+	  	<div data-role="page">
+	  	
+			<div data-role="header" style="background:rgb(34,34,34);">	
+				<img src="img/logo.png" title="LogoLS"/>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="shared.html"
+						id="shared"
+						data-role="tab"
+						class="nonActive">
+						<span text="shared"></span></a></li>
+						<li><a href="personnal.html"
+						id="personnal"
+						data-role="tab"
+						class="nonActive">
+						<span text="perso"></span></a></li>
+					</ul>
+				</div>
+				<p id="gearMenu">
+					<a href="menu.html">
+						<img src="img/parametres.png" title="Menu"></img>
+					</a>
+				</p>
+			</div>
+		
+			<div data-role="content">	
+				
+				<!-- La zone T -->
+				
+				<div text="test1">
+				</div>
+				<!-- Les pop up -->
+			
+				<div data-role="popup" id="popupURL">
+					<form action="" method="post" name="urlEntry">
+						<ul data-role="listview" data-inset="true" style="min-width:50%;">
+							<li data-role="list-divider" text="serverURL"></li>
+							<li><input type="text" name="serverURL" value=""/></li>
+							<li><input type="button" Value="OK" onclick="stockURL(); closePopUp('popupURL');"/></li>
+						</ul>
+					</form>
+				</div>
+			
+				<div data-role="popup" id="popupUserPass">
+					<form action="" method="post">
+						<ul data-role="listview" data-inset="true" style="min-width:50%;">
+							<li data-role="list-divider" text="username"></li>
+							<li><input type="text" name="username" id="username" value=""/></li>
+							<li data-role="list-divider" text="password"></li>
+							<li><input type="password" name="password" id="password" value=""/></li>
+							<li><input type="button" Value="OK" onclick="stockUserPass(); closePopUp('popupUserPass');"/></li>
+						</ul>
+					</form>
+				</div>
+			
+				<div data-role="popup" id="popupLang">
+					<ul data-role="listview">
+						<li data-role="list-divider" text="language"></li>
+						<li>
+							<form action="" method="post" name="lang_form" id="lang_form">
+						 		<input type="radio" name="lang" id="lang_fr" value="fr"/>
+						 		<label for="lang_fr">Français</label>
+						 		<input type="radio" name="lang" id="lang_en" value="eng" />
+						 		<label for="lang_en">English</label>
+						 		<input type="button" Value="OK" onclick="stockLanguage(); languageInit(); closePopUp('popupLang');"/>
+						 	</form>
+						</li>
+					</ul>
+				</div>
+				
+				<!-- La listview affichée -->
+			
+				<ul data-role="listview" class="nav-search">
+					<li data-role="list-divider" text="connection"></li>
+					<li>
+						<a href="#popupURL"
+						data-rel="popup"
+						data-inline="true"
+						data-transition="slideup"
+						data-icon="arrow-r"
+						data-iconpos="right"
+						text="serverURL"></a>
+					</li>
+					<li>
+						<a href="#popupUserPass"
+						data-rel="popup"
+						data-inline="true"
+						data-transition="slideup"
+						data-icon="arrow-r"
+						data-iconpos="right"
+						text="login"></a>
+					</li>
+					<li data-role="list-divider" text="settings"></li>			
+					<li>
+						<a href="#popupLang"
+						data-rel="popup"
+						data-inline="true"
+						data-transition="slideup"
+						data-icon="arrow-r"
+						data-iconpos="right"
+						text="language"></a>
+					</li>
+				</ul>
+
+			</div>
+		
+	  	</div>
+
+	</body>
+	
+</html>

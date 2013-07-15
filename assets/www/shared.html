@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+	 <head>
+	 
+		<meta name="viewport" content="width=320; user-scalable=no" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+		<title>LinShare Mobile</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<link rel="stylesheet" href="master.css" />
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		<script src="script.js"></script>
+		<script>
+			initPage();
+		</script>
+	      
+	</head>
+  
+	<body>
+		<div data-role="page" id="1">
+  
+			<div data-role="header">	
+				<img src="img/logo.png" title="LogoLS"/>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="shared.html"
+						id="shared"
+						data-role="tab"
+						class="active">
+						<span text="shared"></span></a></li>
+						<li><a href="personnal.html"
+						id="personnal"
+						data-role="tab"
+						class="nonActive">
+						<span text="perso"></span></a></li>
+					</ul>
+				</div>
+				<p id="gearMenu">
+					<a href="menu.html">
+						<img src="img/parametres.png" title="Menu"/>
+					</a>
+				</p>
+			</div>
+		
+			<div data-role="content"> 
+		
+	   			<div id="collapsible1" data-role="collapsible-set"></div>
+	   			<script>
+	   				listmaker(1);
+	   				languageInit();
+	   			</script>
+			   			   	
+			</div>
+			
+		   	<div data-role="footer">
+		   		<p><img src="img/home.png" title="Home"/>Bienvenue sur LinShare</p>
+		   	</div>
+		</div>
+	</body>
+  
+</html>

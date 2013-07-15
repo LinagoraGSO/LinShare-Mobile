@@ -1,0 +1,132 @@
+.ui-icon-plusLS {
+	background-image: url("img/icon_plus.png");
+	ui-icon-nodisc; 
+	padding-left: 20px;
+	padding-right: 20px;
+	background-position: center; }
+	
+.ui-icon-moinsLS {
+	background-image: url("img/icon_moins.png");
+	ui-icon-nodisc;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-position: center; }
+	
+div[data-role=collapsible] td {
+	font-size: 15px;
+	font-style: italic;
+	width: 80%; }
+
+div[data-role=collapsible] table {
+	width: 100%; }
+
+.boldLS {
+	font-weight: bold; }
+	
+.downloadImg {
+	float: right;
+	width: 100%;
+	margin-top: 5px; }
+	
+td[rowspan=8] {
+	width: 20%; }
+	
+.loupeImg {
+	width: 6%;
+	padding-right: 10px;
+	padding-left: 10px; }
+	
+div.ui-content#content2 {
+	padding: 0px;
+}
+	
+div[data-role=collapsible-set] table {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e2f1f6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e2f1f6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e2f1f6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e2f1f6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e2f1f6 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e2f1f6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2f1f6',GradientType=0 ); /* IE6-9 */
+	padding: 10px;
+	padding-left: 37px;
+}
+
+div[class=ui-collapsible-content] {
+	padding: 0px; }
+	
+.ui-collapsible-heading .ui-btn-icon-left .ui-btn-inner {
+	padding-left: 78px; }
+	
+ div[data-role=collapsible] .ui-btn-inner {
+	background: #FFF; }
+	
+div[data-role=collapsible] td p {
+	display: inline-block; }
+	
+.ui-navbar li .ui-btn .ui-btn-inner {
+	padding-left: 10px;
+	text-align: left; 
+	background: rgb(34,34,34);
+	border: 0px; }
+	
+.ui-header .ui-btn-icon-left .ui-icon, .ui-footer
+.ui-btn-icon-left .ui-icon, .ui-mini.ui-btn-icon-left
+.ui-icon, .ui-mini .ui-btn-icon-left .ui-icon {
+	left: 60%;
+	vertical-align: center; }
+	
+.ui-mobile .ui-header, .ui-mobile .ui-footer {
+	border: 0px;
+	background:rgb(34,34,34); }
+	
+li span {
+	font-size:1.0em; }
+	
+img[title=LogoLS] {
+	width:35%;
+	height:auto;
+	display:inline-block;
+	margin-bottom:4px; }
+	
+p img[title=Menu] {
+	margin:auto;
+	width:50%;
+	height:auto; }
+	
+p#gearMenu {
+	margin:0%;
+	margin-top:3.5%;
+	width:15%;
+	display:inline-block;
+	text-align:center;
+	vertical-align:top;
+	padding-left:1%; }
+	
+.ui-navbar li .active .ui-btn-inner {
+	background-color:rgb(51,173,214); }
+	
+div[data-role=navbar] {
+	display:inline-block; 
+	width:45%; }
+
+div[data-role=footer] p img {
+	padding-right:8px; }
+	
+div[data-role=footer] p {
+	margin: auto;
+	width:100%;
+	text-align:center;
+	padding-top:2%;
+	padding-bottom:2%; }
+
+span[text=perso], span[text=shared] {
+	padding-top:2%; }
+	
+.ui-navbar li .active .ui-btn-inner, .ui-navbar li .nonActive .ui-btn-inner {
+    padding-top: 15px;
+    text-align: center; }
+    
+.ui-li-divider {
+	background:rgb(51,173,214); }

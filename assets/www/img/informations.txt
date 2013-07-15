@@ -1,0 +1,21 @@
+/***********Application Linshare mobile**************/
+
+/******COULEURS******/
+
+bleu : #33add6 (Menu actif, Titre liste fichier actif)
+dégradé bleu clair : #e2f1f6 vers #fff (Fond dégradé desciption, date, taille, aperçu)
+gris : #484848 (Titre fichier, description, date, taille, aperçu)
+gris foncé : #222222 (Fond menu haut et bas)
+gris clair : #cacaca (trait séparation fichier)
+gris très clair : #f3f3f3 (trait séparation fichier sélectionné avec description)
+
+/******TYPOGRAPHIE******/
+
+/**Titre Menu**/
+
+Century Gothic
+
+/**Fichiers**/ 
+
+Titre => Helvetica, Arial, sans serif (regular)
+Description, date, taille, Aperçu =>  Helvetica, Arial, sans serif (Italic)

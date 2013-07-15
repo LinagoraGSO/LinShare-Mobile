@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+  
+    <meta name="viewport" content="width=320; user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="master.css" />
+    <title>PhoneGap Android App</title>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+      
+  </head>
+  
+  <body>
+  
+    <p class="tableau1"><a href="index.html" >Tableau1</a></p>
+    <p class="tableau2"><a href="tableau2.html" >Tableau2</a></p>
+    </br>
+    <p>Nous sommes sur la première page</p>
+    <ul id="ici"></ul>
+    <script>
+    	for (var i=0; i<10; i++) {
+    	    var newA = document.createElement('li');
+    		newA.title="Element" + i;
+    		document.getElementById('ici').appendChild(newA);
+    		newA.appendChild(document.createTextNode("Voici l'élément " + i + " "));
+    	}
+   	</script>
+
+    			
+    
+  </body>
+  
+</html>
